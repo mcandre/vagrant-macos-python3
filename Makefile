@@ -3,7 +3,7 @@ BOX_BASENAME=vagrant-macos-python3
 
 .PHONY: launch-vm clean-vm clean-boxes clean-vagrant-metadata
 
-launch-vm-virtualbox: Vagrantfile bootstrap.sh
+launch-vm-virtualbox: Vagrantfile bootstrap
 	vagrant up --provider virtualbox
 
 clean-vm:
